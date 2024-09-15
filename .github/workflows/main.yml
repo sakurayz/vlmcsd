@@ -1,0 +1,13 @@
+jobs:
+  sync fork:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: sakurayz/vlmcsd@master
+        with:
+          github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          upstream_repository: Wind4/vlmcsd
+          target_repository: sakurayz/vlmcsd
+          upstream_branch: master
+          target_branch: master
+          force: false
+          tags: true
