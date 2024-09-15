@@ -9,5 +9,5 @@ jobs:
           target_repository: sakurayz/vlmcsd
           upstream_branch: master
           target_branch: master
-          force: false
+          force: true
           tags: true
